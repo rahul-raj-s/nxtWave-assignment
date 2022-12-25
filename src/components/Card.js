@@ -1,4 +1,4 @@
-export const Card = ({ title, iconUrl, subtitle, link, description }) => {
+export const Card = ({ title, iconUrl, subtitle, link, description, tag }) => {
   return (
     <div className="card">
       <div className="card_header">
@@ -8,6 +8,7 @@ export const Card = ({ title, iconUrl, subtitle, link, description }) => {
           <small>{subtitle}</small>
         </div>
       </div>
+      <small>{tag}</small>
       <a href={link} className="card_link">
         {link}
       </a>
