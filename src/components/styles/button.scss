@@ -1,0 +1,12 @@
+.btn {
+  margin: 0px 5px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+
+  &_primary {
+    background-color: #2dca73;
+    color: #ffffff;
+  }
+}

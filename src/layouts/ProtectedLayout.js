@@ -1,9 +1,10 @@
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import {  Outlet } from "react-router-dom";
+import { NavBar } from "../components";
 
 export const ProtectedLayout = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <NavBar />
       <Outlet />
     </div>
   );
