@@ -7,6 +7,8 @@ export const ProtectedRoutes = () => {
     <Routes>
       <Route path="/" element={<ProtectedLayout />}>
         <Route path="/resources" element={<Resources />} />
+        <Route path="/requests" element={<Resources type="request" />} />
+        <Route path="/users" element={<Resources type="user" />} />
         <Route path="*" element={<h1>404</h1>} />
         <Route index element={<Navigate to="/resources" />} />
       </Route>
