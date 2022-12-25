@@ -7,11 +7,16 @@ export const commonApiService = createApi({
   refetchOnMountOrArgChange: true,
   baseQuery: fetchBaseQuery({
     baseUrl: "https://media-content.ccbp.in/website/react-assignment/",
+    // prepareHeaders: (headers, { getState }) => {
+    //   headers.set("Access-Control-Allow-Origin", "*");
+    //   return headers;
+    // },
   }),
   endpoints: (builder) => ({
     getResources: getCollectionQuery(builder, "resources.json"),
+    createResource: createMutation(builder, "add_resource.json"),
   }),
 });
 
-export const { useGetResourcesQuery } =
+export const { useGetResourcesQuery, useCreateResourceMutation } =
   commonApiService;
