@@ -1,0 +1,50 @@
+.card {
+  height: 192px;
+  width: 360px;
+  background: #ffffff;
+  border: 1px solid #d7dfe9;
+  border-radius: 4px;
+  padding: 24px;
+  margin: 16px;
+
+  &_header {
+    display: flex;
+  }
+  &_icon {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+  }
+  &_title {
+    font-family: "HK Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #171f46;
+  }
+  &_link {
+    font-family: "HK Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #0b69ff;
+    text-decoration: none;
+  }
+  &_description {
+    width: 312px;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    background: #fff;
+    font-family: "HK Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7e858e;
+  }
+}
