@@ -1,4 +1,5 @@
 import { Button } from "./Button";
+import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   return (
@@ -7,7 +8,7 @@ export const NavBar = () => {
         <span>nxt Wave</span>
       </div>
       <div className="nav_right-section">
-        <Button >Add Item</Button>
+        <NavLink to="add-item">Add Item</NavLink>
         <div>User</div>
       </div>
     </nav>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { SearchBox, Card } from "../components";
-import { useData } from "../hooks/useData";
+import { useData } from "../hooks";
 import { useGetResourcesQuery } from "../services/apiService";
 
 export const Resources = ({ type = "" }) => {

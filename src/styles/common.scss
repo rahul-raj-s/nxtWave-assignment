@@ -83,7 +83,36 @@ small {
   margin: 20px auto;
 }
 
-.searchbox-wrapper{
+.searchbox-wrapper {
   display: flex;
   justify-content: center;
+}
+.new-resource {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &_left{
+    width: 50%;
+    min-width: 350px;
+  }
+  &_img {
+    width: 50%;
+    height: calc(100vh - 80px);
+    min-width: 350px;
+  }
+  .resource-form{
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    &-title{
+      text-align: center;
+    }
+  }
+  .new-resource-btn{
+    margin: auto;
+    margin-top: 20px;
+    width: 150px;
+    display: block;
+  }
 }
