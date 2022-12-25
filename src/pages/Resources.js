@@ -10,9 +10,18 @@ export const Resources = () => {
       <SearchBox />
       <nav></nav>
       <div className="resource-list">
-        {resources?.map(({ title, icon_url, id }) => (
-          <Card title={title} iconUrl={icon_url} key={id} />
-        ))}
+        {resources?.map(
+          ({ title, icon_url, category, id, link, description }) => (
+            <Card
+              title={title}
+              iconUrl={icon_url}
+              key={id}
+              subtitle={category}
+              link={link}
+              description={description}
+            />
+          )
+        )}
       </div>
     </main>
   );
