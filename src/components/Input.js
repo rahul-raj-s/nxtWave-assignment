@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 /**
  *
  * @param {String} label label for input
@@ -16,16 +16,18 @@ export const Input = ({
   onChange,
   type = "text",
   error = "",
+  id,
 }) => {
   return (
     <div className={`input-group ${error && "error"}`}>
-      <label>{label}</label>
+      <label htmlFor={id}>{label}</label>
       <div className="input-wrapper">
         <input
           placeholder={placeholder}
           value={value}
           onChange={onChange}
           type={type}
+          id={id}
         />
       </div>
       <small className="input-error">{error || ""}</small>
