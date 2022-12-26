@@ -9,7 +9,7 @@ import sprite from "../assets/icons.svg";
 
 export const NewResource = () => {
   const navigate = useNavigate();
-  const [callFlag, setCallFlag] = useState(true);
+  const [callFlag, setCallFlag] = useState(false);
   const { isLoading, isSuccess, error } = useCreateResourceQuery(
     {},
     { skip: !callFlag }
