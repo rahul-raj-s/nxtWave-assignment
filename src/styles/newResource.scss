@@ -1,0 +1,40 @@
+.new-resource {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &_left {
+    width: 50%;
+    min-width: 350px;
+  }
+  &_img {
+    width: 50%;
+    height: calc(100vh - 47px);
+    min-width: 350px;
+  }
+  .resource-form {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    &-title {
+      text-align: center;
+    }
+  }
+  .new-resource-btn {
+    margin: auto;
+    margin-top: 20px;
+    width: 150px;
+    display: block;
+    background: #0b69ff;
+    border-radius: 4px;
+    padding: 8px 20px;
+  }
+}
+
+.breadcrum {
+  padding: 20px;
+  .back-icon {
+    cursor: pointer;
+  }
+}
+
