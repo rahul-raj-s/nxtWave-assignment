@@ -10,12 +10,12 @@ export const ProtectedRoutes = () => {
         <Route index element={<Navigate to="/add-item" />} />
       </Route>
       <Route path="/" element={<ProtectedLayoutWithAddOption />}>
-        <Route path="/resources" element={<Resources />} />
-        <Route path="/requests" element={<Resources type="request" />} />
-        <Route path="/users" element={<Resources type="user" />} />
+        <Route path="resources" element={<Resources />} />
+        <Route path="requests" element={<Resources type="request" />} />
+        <Route path="users" element={<Resources type="user" />} />
         <Route path="add-item" element={<NewResource />} />
         <Route path="*" element={<h1>404</h1>} />
-        <Route index element={<Navigate to="/resources" />} />
+        <Route index element={<Navigate to="resources" />} />
       </Route>
       
     </Routes>
