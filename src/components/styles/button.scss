@@ -10,4 +10,8 @@
     background-color: #2dca73;
     color: #ffffff;
   }
+  &:disabled{
+    cursor: not-allowed;
+    background-color: gray;
+  }
 }
