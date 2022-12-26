@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/nxtWave-assignment/static/css/main.8077bbf5.css",
-    "main.js": "/nxtWave-assignment/static/js/main.c5bb658b.js",
+    "main.js": "/nxtWave-assignment/static/js/main.785548f6.js",
     "static/js/787.12e6dbcf.chunk.js": "/nxtWave-assignment/static/js/787.12e6dbcf.chunk.js",
     "static/media/formImg.png": "/nxtWave-assignment/static/media/formImg.432477c07aed32fec75f.png",
     "static/media/user.png": "/nxtWave-assignment/static/media/user.0602a4088c3ca6326a37.png",
     "static/media/icons.svg": "/nxtWave-assignment/static/media/icons.c5700eb03c4d904eb1e8efd3f4f74763.svg",
     "index.html": "/nxtWave-assignment/index.html",
     "main.8077bbf5.css.map": "/nxtWave-assignment/static/css/main.8077bbf5.css.map",
-    "main.c5bb658b.js.map": "/nxtWave-assignment/static/js/main.c5bb658b.js.map",
+    "main.785548f6.js.map": "/nxtWave-assignment/static/js/main.785548f6.js.map",
     "787.12e6dbcf.chunk.js.map": "/nxtWave-assignment/static/js/787.12e6dbcf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8077bbf5.css",
-    "static/js/main.c5bb658b.js"
+    "static/js/main.785548f6.js"
   ]
 }
