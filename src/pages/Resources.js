@@ -58,19 +58,16 @@ export const Resources = ({ type = "" }) => {
       </div>
       <div className="resource-list">
         {!isLoadingApi &&
-          data?.map(
-            ({ title, icon_url, category, id, link, description, tag }) => (
-              <Card
-                title={title}
-                iconUrl={icon_url}
-                key={id}
-                subtitle={category}
-                link={link}
-                description={description}
-                tag={tag}
-              />
-            )
-          )}
+          data?.map(({ title, icon_url, category, id, link, description }) => (
+            <Card
+              title={title}
+              iconUrl={icon_url}
+              key={id}
+              subtitle={category}
+              link={link}
+              description={description}
+            />
+          ))}
         {isLoadingApi && <h1>Loading...</h1>}
         {!isLoadingApi && !data?.length && <h1>No Data</h1>}
       </div>

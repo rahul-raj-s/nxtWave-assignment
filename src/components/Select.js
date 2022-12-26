@@ -14,7 +14,7 @@ export const Select = ({
           {children}
         </select>
       </div>
-      {error && <small className="input-error">{error}</small>}
+      <small className="input-error">{error || ""}</small>
     </div>
   );
 };

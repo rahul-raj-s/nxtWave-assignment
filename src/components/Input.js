@@ -28,7 +28,7 @@ export const Input = ({
           type={type}
         />
       </div>
-      {error && <small className="input-error">{error}</small>}
+      <small className="input-error">{error || ""}</small>
     </div>
   );
 };
