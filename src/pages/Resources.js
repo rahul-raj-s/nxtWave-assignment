@@ -39,6 +39,7 @@ export const Resources = ({ type = "" }) => {
                 `filter-item ${navData.isActive && "active"}`
               }
               to={filter.path}
+              key={filter.path}
             >
               {filter.label}
             </NavLink>

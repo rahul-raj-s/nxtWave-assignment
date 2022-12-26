@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 /**
  *
  * @param {String} label label for input
