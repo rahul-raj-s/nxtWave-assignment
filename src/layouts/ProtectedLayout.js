@@ -1,5 +1,18 @@
-import {  Outlet } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { NavBar } from "../components";
+
+export const ProtectedLayoutWithAddOption = () => {
+  return (
+    <div>
+      <NavBar>
+        <NavLink to="add-item" className="add-item">
+          Add Item
+        </NavLink>
+      </NavBar>
+      <Outlet />
+    </div>
+  );
+};
 
 export const ProtectedLayout = () => {
   return (
