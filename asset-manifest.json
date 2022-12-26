@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/nxtWave-assignment/static/css/main.8077bbf5.css",
-    "main.js": "/nxtWave-assignment/static/js/main.785548f6.js",
+    "main.css": "/nxtWave-assignment/static/css/main.59990a35.css",
+    "main.js": "/nxtWave-assignment/static/js/main.8699347b.js",
     "static/js/787.12e6dbcf.chunk.js": "/nxtWave-assignment/static/js/787.12e6dbcf.chunk.js",
     "static/media/formImg.png": "/nxtWave-assignment/static/media/formImg.432477c07aed32fec75f.png",
     "static/media/user.png": "/nxtWave-assignment/static/media/user.0602a4088c3ca6326a37.png",
     "static/media/icons.svg": "/nxtWave-assignment/static/media/icons.c5700eb03c4d904eb1e8efd3f4f74763.svg",
     "index.html": "/nxtWave-assignment/index.html",
-    "main.8077bbf5.css.map": "/nxtWave-assignment/static/css/main.8077bbf5.css.map",
-    "main.785548f6.js.map": "/nxtWave-assignment/static/js/main.785548f6.js.map",
+    "main.59990a35.css.map": "/nxtWave-assignment/static/css/main.59990a35.css.map",
+    "main.8699347b.js.map": "/nxtWave-assignment/static/js/main.8699347b.js.map",
     "787.12e6dbcf.chunk.js.map": "/nxtWave-assignment/static/js/787.12e6dbcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8077bbf5.css",
-    "static/js/main.785548f6.js"
+    "static/css/main.59990a35.css",
+    "static/js/main.8699347b.js"
   ]
 }
