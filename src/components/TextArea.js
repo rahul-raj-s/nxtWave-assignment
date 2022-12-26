@@ -11,7 +11,7 @@ export const TextArea = ({
       <div className="input-wrapper">
         <textarea placeholder={placeholder} value={value} onChange={onChange} />
       </div>
-      {error && <small className="input-error">{error}</small>}
+      <small className="input-error">{error || ""}</small>
     </div>
   );
 };
