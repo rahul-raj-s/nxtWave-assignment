@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { NavLink } from "react-router-dom";
 import { SearchBox, Card } from "../components";
 import { useData } from "../hooks";
@@ -16,6 +16,15 @@ export const Resources = ({ type = "" }) => {
     setFilter((prevState) => ({ ...prevState, [key]: value }));
   };
 
+  const filterList = useMemo(
+    () => [
+      { label: "Resources", path: "/resources" },
+      { label: "Requests", path: "/requests" },
+      { label: "Users", path: "/users" },
+    ],
+    []
+  );
+
   useEffect(() => {
     handleFilterChange("tag", type);
   }, [type]);
@@ -24,30 +33,16 @@ export const Resources = ({ type = "" }) => {
     <main>
       <div className="top-section">
         <nav className="filters">
-          <NavLink
-            className={(navData) =>
-              `filter-item ${navData.isActive && "active"}`
-            }
-            to="/resources"
-          >
-            Resources
-          </NavLink>
-          <NavLink
-            className={(navData) =>
-              `filter-item ${navData.isActive && "active"}`
-            }
-            to="/requests"
-          >
-            Requests
-          </NavLink>
-          <NavLink
-            className={(navData) =>
-              `filter-item ${navData.isActive && "active"}`
-            }
-            to="/users"
-          >
-            Users
-          </NavLink>
+          {filterList.map((filter) => (
+            <NavLink
+              className={(navData) =>
+                `filter-item ${navData.isActive && "active"}`
+              }
+              to={filter.path}
+            >
+              {filter.label}
+            </NavLink>
+          ))}
         </nav>
         <div className="searchbox-wrapper">
           <SearchBox
