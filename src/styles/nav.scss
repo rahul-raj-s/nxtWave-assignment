@@ -11,7 +11,14 @@
   }
   .add-item {
     text-decoration: none;
-    // @extend .btn, .btn_primary;
+    margin: 0px 5px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #2dca73;
+    color: #ffffff;
   }
   .user-img {
     height: 25px;
@@ -19,7 +26,7 @@
     border-radius: 50%;
     margin: 0 5px;
   }
-  .small-logo{
+  .small-logo {
     height: 25px;
   }
 }
