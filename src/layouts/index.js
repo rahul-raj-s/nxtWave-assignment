@@ -1,1 +1,4 @@
-export { ProtectedLayout } from "./ProtectedLayout";
+export {
+  ProtectedLayout,
+  ProtectedLayoutWithAddOption,
+} from "./ProtectedLayout";

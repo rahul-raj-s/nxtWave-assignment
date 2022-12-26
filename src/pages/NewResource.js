@@ -3,6 +3,7 @@ import { useForm } from "../hooks";
 import { Input, Button, Select, TextArea } from "../components";
 import { formImg } from "../assets";
 import { useCreateResourceMutation } from "../services/apiService";
+import sprite from "../assets/icons.svg";
 
 export const NewResource = () => {
   const navigate = useNavigate();
@@ -29,8 +30,13 @@ export const NewResource = () => {
   return (
     <div className="new-resource">
       <div className="new-resource_left">
-        <div style={{ marginLeft: "20px" }}>
-          <small onClick={() => navigate(-1)}>back</small> Users
+        <div className="breadcrum">
+          <span className="back-icon" onClick={() => navigate("/users")}>
+            <svg className="icon">
+              <use href={`${sprite}#back`} />
+            </svg>
+            Users
+          </span>
         </div>
         <form className="resource-form" onSubmit={form.submitForm}>
           <h1 className="resource-form-title">Item Details</h1>

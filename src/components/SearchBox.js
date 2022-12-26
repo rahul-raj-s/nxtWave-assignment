@@ -20,7 +20,7 @@ export const SearchBox = ({ value = "", onChange, debounceTime = 1000 }) => {
         onChange={(e) => setCurrentVal(e.target.value)}
       />
       <span className="search-icon">
-        <svg className="icon">
+        <svg >
           <use href={`${sprite}#search`} />
         </svg>
       </span>

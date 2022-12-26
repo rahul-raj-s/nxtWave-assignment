@@ -1,15 +1,14 @@
-import { Button } from "./Button";
-import { NavLink } from "react-router-dom";
+import { userImg, logoImg } from "../assets";
 
-export const NavBar = () => {
+export const NavBar = ({ children }) => {
   return (
     <nav className="nav">
       <div className="nav_left-section">
-        <span>nxt Wave</span>
+        <img src={logoImg} className="small-logo" />
       </div>
       <div className="nav_right-section">
-        <NavLink to="add-item">Add Item</NavLink>
-        <div>User</div>
+        {children}
+        <img src={userImg} className="user-img" />
       </div>
     </nav>
   );

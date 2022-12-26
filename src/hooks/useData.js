@@ -12,7 +12,7 @@ export const useData = (apiData, filterObj) => {
     filter();
   }, [filterObj]);
 
-  const isSelected = (datum) => {
+  const isSelectable = (datum) => {
     let filterKeys = Object.keys(filterObj);
 
     for (let i = 0; i < filterKeys.length; i++) {
@@ -30,7 +30,7 @@ export const useData = (apiData, filterObj) => {
 
   const filter = () => {
     if (apiData) {
-      let tempData = apiData.filter((datum) => isSelected(datum));
+      let tempData = apiData.filter((datum) => isSelectable(datum));
       setData(tempData);
     }
   };

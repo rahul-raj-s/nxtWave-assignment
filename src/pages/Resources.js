@@ -5,7 +5,7 @@ import { useData } from "../hooks";
 import { useGetResourcesQuery } from "../services/apiService";
 
 export const Resources = ({ type = "" }) => {
-  const { data: resources } = useGetResourcesQuery();
+  const { data: resources, isLoading: isLoadingApi } = useGetResourcesQuery();
   const [filter, setFilter] = useState({
     title: "",
     tag: type,
@@ -57,19 +57,22 @@ export const Resources = ({ type = "" }) => {
         </div>
       </div>
       <div className="resource-list">
-        {data?.map(
-          ({ title, icon_url, category, id, link, description, tag }) => (
-            <Card
-              title={title}
-              iconUrl={icon_url}
-              key={id}
-              subtitle={category}
-              link={link}
-              description={description}
-              tag={tag}
-            />
-          )
-        )}
+        {!isLoadingApi &&
+          data?.map(
+            ({ title, icon_url, category, id, link, description, tag }) => (
+              <Card
+                title={title}
+                iconUrl={icon_url}
+                key={id}
+                subtitle={category}
+                link={link}
+                description={description}
+                tag={tag}
+              />
+            )
+          )}
+        {isLoadingApi && <h1>Loading...</h1>}
+        {!isLoadingApi && !data?.length && <h1>No Data</h1>}
       </div>
     </main>
   );
