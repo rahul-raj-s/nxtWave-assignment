@@ -1,5 +1,5 @@
 import { Outlet, NavLink } from "react-router-dom";
-import { NavBar } from "../components";
+import { NavBar } from "./shared/NavBar";
 
 export const ProtectedLayoutWithAddOption = () => {
   return (

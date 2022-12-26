@@ -8,6 +8,10 @@
     height: 40px;
     padding: 8px;
     padding-left: 30px;
+    outline: none;
+    &:focus {
+      border-color: #0b69ff;
+    }
   }
   .search-icon {
     .icon {
@@ -16,6 +20,6 @@
     }
     position: absolute;
     left: 10px;
-    top:14px
+    top: 14px;
   }
 }

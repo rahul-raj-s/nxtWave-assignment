@@ -2,7 +2,7 @@ export const Card = ({ title, iconUrl, subtitle, link, description, tag }) => {
   return (
     <div className="card">
       <div className="card_header">
-        <img src={iconUrl} className="card_icon" />
+        <img src={iconUrl} className="card_icon" loading="lazy"/>
         <div>
           <h1 className="cart_title">{title}</h1>
           <small>{subtitle}</small>
